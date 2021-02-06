@@ -1,10 +1,10 @@
-var color = ["blue", "green", "yellow", "red", "pink", "violet", "crimson", "grey", "lightgray", "skyblue"]
 
-function on() {
+function changeColor() {
 
+    var red = Math.floor((Math.random() * 256)); // chooses numbers from 0 to 255
+    var green = Math.floor((Math.random() * 256));
+    var blue = Math.floor((Math.random() * 256));
 
-    var t = Math.floor((Math.random() * 10) + 1);
-    document.body.style.backgroundColor = color[t];
-
+    document.body.style.backgroundColor = `rgb(${red},${green},${blue})`; //  string formate
 
 }
